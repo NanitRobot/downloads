@@ -63,7 +63,7 @@ To write the program to the ```Nanit``` board, you need to use the `avrdude` uti
   avrdude -c usbtiny -p m2560 -U efuse:w:0xFD:m -U hfuse:w:0xD8:m -U lfuse:w:0xFF:m -U flash:w:NanitInfo.ino.with_bootloader.hex:i - b 152000
 ```
 
-  This example uses `usbtiny`. Along with programming the bootloader, the necessary fuses are installed
+  This example uses `usbtiny`. Necessary fuses are installed along with bootloader programming
 
 
 | Fuse  | Value|
