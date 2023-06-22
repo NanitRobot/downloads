@@ -23,9 +23,9 @@ No IDE
 
 ```avrdude```
 
-         ```bash
-         # Instruction under development
-         ```
+```bash
+  # Instruction under development
+```
 
 Clearing the EEPROM
 ===================
