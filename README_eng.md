@@ -66,12 +66,12 @@ To write the program to the ```Nanit``` board, you need to use the `avrdude` uti
   This example uses `usbtiny`. Necessary fuses are installed along with bootloader programming
 
 
-| Fuse  | Value|
-|:-----:|:----:|
-| lock  | 0xFF |
-| lfuse | 0xD8 |
-| hfuse | 0xFF |
-| efuse | 0xFD |
+|   Fuse  | Value|
+|:-------:|:----:|
+| lock    | 0xFF |
+| hfuse   | 0xD8 |
+| lfuse   | 0xFF |
+| efuse   | 0xFD |
 
 Supported programmers
 ---------------------
