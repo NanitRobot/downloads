@@ -60,7 +60,7 @@ __УВАГА__ не намагайтеся записати мікропрогр
 Для запису програми на плату `Nanit` потрібно використовути утиліту `avrdude`.
 
 ```zsh
- avrdude -c usbtiny -p m2560 -U efuse:w:0xFD:m  -U hfuse:w:0xD8:m  -U lfuse:w:0xFF:m  -U flash:w:NanitInfo.ino.with_bootloader.hex:i -b 152000
+ avrdude -c usbtiny -p m2560 -Ulock:w:0x3F:m  -U efuse:w:0xFD:m  -U hfuse:w:0xD8:m  -U lfuse:w:0xFF:m  -U flash:w:NanitInfo.ino.with_bootloader.hex:i -b 152000
  ```
 
  В даному прикладі використовується `usbtiny`. Разом з прогрмамуванням бутлоадера втсановлюються необхідні ф'юзбіти
@@ -68,7 +68,7 @@ __УВАГА__ не намагайтеся записати мікропрогр
 
 |   Fuse  | Value|
 |:-------:|:----:|
-| lock    | 0xFF |
+| lock    | 0x3F |
 | hfuse   | 0xD8 |
 | lfuse   | 0xFF |
 | efuse   | 0xFD |

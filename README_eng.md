@@ -60,7 +60,7 @@ One of the files is required to write the bootloader firmware
 To write the program to the ```Nanit``` board, you need to use the `avrdude` utility.
 
 ```zsh
-  avrdude -c usbtiny -p m2560 -U efuse:w:0xFD:m -U hfuse:w:0xD8:m -U lfuse:w:0xFF:m -U flash:w:NanitInfo.ino.with_bootloader.hex:i - b 152000
+  avrdude -c usbtiny -p m2560 -Ulock:w:0x3F:m -U efuse:w:0xFD:m -U hfuse:w:0xD8:m -U lfuse:w:0xFF:m -U flash:w:NanitInfo.ino.with_bootloader.hex:i - b 152000
 ```
 
   This example uses `usbtiny`. Necessary fuses are installed along with bootloader programming
@@ -68,7 +68,7 @@ To write the program to the ```Nanit``` board, you need to use the `avrdude` uti
 
 |   Fuse  | Value|
 |:-------:|:----:|
-| lock    | 0xFF |
+| lock    | 0x3F |
 | hfuse   | 0xD8 |
 | lfuse   | 0xFF |
 | efuse   | 0xFD |
