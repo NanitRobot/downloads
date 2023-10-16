@@ -20,12 +20,14 @@ Arduino IDE
 
 No IDE
 -------
+To restore the default firmware without using the Arduino IDE, you must have the ```avrdude``` application installed on your PC and all drivers and dependencies configured.
 
-```avrdude```
-
-```bash
-  # Instruction under development
+__ATTENTION this command is only valid for ```LinuxOS```__
+```zsh
+avrdude -c wiring -p m2560 -U flash:w:./NanitInfo.ino.hex:i -P /dev/ttyUSB0
 ```
+### Explanation
+We run `avrdude` using the built-in programmer (`wiring`) for the __ATmega2560__ microcontroller to write the contents of the file [NanitInfo.ino.hex](./NanitInfo.ino.hex), which contains the executable code in IntelHex format, to the flash memory: `i` through port `/dev/ttyUSB0`
 
 Clearing the EEPROM
 ===================
