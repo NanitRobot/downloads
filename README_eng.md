@@ -15,6 +15,7 @@
   Files are not updated here
   <a href="https://nanitrobot.github.io/NanitLib/Ukrainian/group__factory__settings.html">The latest files are now here</a>
 </div>
+
 Default firmware
 ================
 
