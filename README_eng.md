@@ -1,3 +1,20 @@
+<style>
+        .warning {
+  border: 10px ridge #f00;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.warning p {
+  font: small-caps bold 1.2rem sans-serif;
+  text-align: center;
+}
+</style>
+<div class="warning">
+  Files are not updated here
+  <a href="https://nanitrobot.github.io/NanitLib/Ukrainian/group__factory__settings.html">The latest files are now here</a>
+</div>
 Default firmware
 ================
 
